@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "./../public/images/harrypotter.png"
+  },
+  {
+    "id": 2,
+    "image": "./../public/images/billweasley.png"
+  },
+  {
+    "id": 3,
+    "image": "./../public/images/dobby.png"
+  },
+  {
+    "id": 4,
+    "image": "./../public/images/dumbledore.png"
+  },
+  {
+    "id": 5,
+    "image": "./../public/images/fleurdelaceur.png"
+  },
+  {
+    "id": 6,
+    "image": "./../public/images/georgeweasley.png"
+  },
+  {
+    "id": 7,
+    "image": "./../public/images/ginnyweasley.png"
+  },
+  {
+    "id": 8,
+    "image": "./../public/images/hagrid.png"
+  },
+  {
+    "id": 9,
+    "image": "./../public/images/hermionegranger.png"
+  },
+  {
+    "id": 10,
+    "image": "./../public/images/luciusmalfoy.png"
+  },
+  {
+    "id": 11,
+    "image": "./../public/images/moaningmyrtle.png"
+  },
+  {
+    "id": 12,
+    "image": "./../public/images/mrsweasley.png"
+  },
+  {
+    "id": 13,
+    "image": "./../public/images/ronweasley.png"
+  },
+  {
+    "id": 14,
+    "image": "./../public/images/viktorkrum.png"
+  },
+  {
+    "id": 15,
+    "image": "./../public/images/voldemort.png"
+  }
+]
