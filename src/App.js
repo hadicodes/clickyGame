@@ -1,35 +1,31 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import CharacterCard from "./components/CharacterCard";
 import Wrapper from "./components/Wrapper";
-import friends from "./friends.json";
+import characters from "./characters.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.characters to the characters json array
   state = {
-    friends
+    characters
   };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+  removeCharacter = id => {
+    // Filter this.state.characters for characters with an id not equal to the id being removed
+    const characters = this.state.characters.filter(character => character.id !== id);
+    // Set this.state.characters equal to the new characters array
+    this.setState({ characters });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.characters and render a CharacterCard component for each character object
   render() {
     return (
       <Wrapper>
-        {this.state.friends.map(friend => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+        {this.state.characters.map(character => (
+          <CharacterCard
+            removeCharacter={this.removeCharacter}
+            id={characters.id}
+            image={characters.image}
           />
         ))}
       </Wrapper>

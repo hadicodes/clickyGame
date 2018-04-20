@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "image": "./../public/images/harrypotter.png"
+    "image": "https://www.pottermore.com/explore-the-story/harry-potter"
   },
   {
     "id": 2,
-    "image": "./../public/images/billweasley.png"
+    "image": "../public/images/billweasley.png"
   },
   {
     "id": 3,
