@@ -3,12 +3,9 @@ import "./CharacterCard.css";
 
 const CharacterCard = props => (
   <div className="card">
-    {/* <div className="img-container"> */}
-      <img alt={props.name} src={props.image} />
-    {/* </div> */}
-    {/* <span onClick={() => props.removeFriend(props.id)} className="remove">
-      𝘅
-    </span> */}
+    <span onClick={() => props.updateCharacter(props.id)} className="update">
+      <img alt={props.image} src={props.image} />
+    </span>
   </div>
 );
 

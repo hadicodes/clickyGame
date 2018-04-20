@@ -10,8 +10,8 @@ class App extends Component {
     characters
   };
 
-  removeCharacter = id => {
-    // Filter this.state.characters for characters with an id not equal to the id being removed
+  updateCharacter = id => {
+    // Filter this.state.characters for characters with an id not equal to the id being 
     const characters = this.state.characters.filter(character => character.id !== id);
     // Set this.state.characters equal to the new characters array
     this.setState({ characters });
@@ -19,13 +19,15 @@ class App extends Component {
 
   // Map over this.state.characters and render a CharacterCard component for each character object
   render() {
+    console.log(characters)
     return (
       <Wrapper>
         {this.state.characters.map(character => (
           <CharacterCard
-            removeCharacter={this.removeCharacter}
-            id={characters.id}
-            image={characters.image}
+            updateCharacter={this.updateCharacter}
+            id={character.id}
+            key={character.id}
+            image={character.image}
           />
         ))}
       </Wrapper>
